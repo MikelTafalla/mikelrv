@@ -3,6 +3,7 @@ body {
     font-size: 18px;
     line-height: 1.7;
     background-color: #333;
+    background-image: url("../assets/images/blueTechSea.jpg");
     padding: 25px 50px;
 }
 img {
