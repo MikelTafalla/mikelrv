@@ -1,8 +1,5 @@
 import React from "react";
 import Typist from "react-typist";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { MDBIcon } from "mdbreact";
 import "./landing.css";
 import Navbar from "./navbar"
 
@@ -14,28 +11,10 @@ const ShellTerminal = () => {
 
             <div className="text-center">
                 <img src={require("../assets/images/MikelColumn.png").default} className="rounded" alt="mikel" />
-                <ul className="social-list list-inline py-2 mx-auto">
-                    <li className="list-inline-item">
-                        <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"} target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faLinkedinIn}/>
-                        </a>
-                    </li>
-                    <li className="list-inline-item">
-                        <a href={"https://github.com/MikelTafalla"} target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faGithub}/>
-                        </a>
-                    </li>
-                    <li className="list-inline-item">
-                        <a href={"https://drive.google.com/file/d/11QkzKWSPEZ5q3N-XW5pd7j_bkxVU2yW6/view?usp=sharing"} target="_blank" rel="noreferrer">
-                            <MDBIcon icon="award" />
-                        </a>
-                    </li>
-            </ul>
-                
             </div>
             <div className="Typist bash"> 
             <Navbar />
-                $Welcome to mikelrv Shell! (V1.0.0)
+                $Welcome to mikelrv's Shell! (V1.0.0)
                 <br></br>
                 <br></br>
                 <br></br>
@@ -45,7 +24,7 @@ const ShellTerminal = () => {
                         <Typist
                             className="Typist-message"
                             startDelay={1500}
-                            avgTypingDelay={50}
+                            avgTypingDelay={40}
                             cursor={{ hideWhenDone: true }}
                         >
                             $ My name is Mikel Rodriguez. I'm a Full-Stack Developer and Spanish Linguist with a Master's degree in Iberian Linguistics. Welcome to my personal website!
@@ -54,6 +33,18 @@ const ShellTerminal = () => {
                             <br />
                             <span>$ <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"} className="flash">My Work</a></span>
                             <br />
+
+                            <Typist.Delay ms={250} />
+                            <br />
+                            <span>$ <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"} className="flash">About me</a></span>
+                            <br />
+
+                            <Typist.Delay ms={250} />
+                            <br />
+                            <span>$ <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"} className="flash">Resume</a></span>
+                            <br />
+
+
                             
                         </Typist>
                     

@@ -5,6 +5,9 @@ body {
     background-color: #333;
     padding: 25px 50px;
 }
+img {
+    padding-bottom: 5%;
+}
 .Typist a {
     color: inherit;
 }
@@ -50,7 +53,7 @@ body {
 
   .bash {
     background-color: black;
-    background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+    background-image: radial-gradient(rgba(0, 110, 150, 0.75), black 120%);
     margin: 0;
     border-radius: 25px;
     overflow: hidden;

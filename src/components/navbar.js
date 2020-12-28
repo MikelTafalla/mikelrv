@@ -56,6 +56,11 @@ const Navbar = () => {
                     <li className="nav-item">
                         <a className="nav-link active" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mikel-rodriguez-villar/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
                     </li>
+
+                    <li className="nav-item">
+                        <a className="nav-link active" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/11QkzKWSPEZ5q3N-XW5pd7j_bkxVU2yW6/view?usp=sharing"><MDBIcon icon="award" /></a>
+                    </li>
+
                 </ul>
             </div>
         </nav>
