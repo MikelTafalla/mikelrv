@@ -16,20 +16,20 @@ const Fluid = () => {
     return (
         <React.Fragment>
             <div className="text-center">
-                <img src={require("../assets/images/MikelColumn.png").default} className="rounded" alt="mikel's photo" />
+                <img src={require("../assets/images/MikelColumn.png").default} className="rounded" alt="mikel" />
                 <ul className="social-list list-inline py-2 mx-auto">
                     <li className="list-inline-item">
-                        <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"} target="_blank">
+                        <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"} target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faLinkedinIn}/>
                         </a>
                     </li>
                     <li className="list-inline-item">
-                        <a href={"https://github.com/MikelTafalla"} target="_blank">
+                        <a href={"https://github.com/MikelTafalla"} target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faGithub}/>
                         </a>
                     </li>
                     <li className="list-inline-item">
-                        <a href={"https://drive.google.com/file/d/11QkzKWSPEZ5q3N-XW5pd7j_bkxVU2yW6/view?usp=sharing"} target="_blank">
+                        <a href={"https://drive.google.com/file/d/11QkzKWSPEZ5q3N-XW5pd7j_bkxVU2yW6/view?usp=sharing"} target="_blank" rel="noreferrer">
                             <MDBIcon icon="award" />
                         </a>
                     </li>
@@ -43,7 +43,7 @@ const Fluid = () => {
                     startDelay={250}
                     onTypingDone={() => onHeaderTyped()}
                 >
-                    <a href={""}>Hi!!</a>
+                    <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"}>Hi!!</a>
                 </Typist>
                 <div className="Typist-content">
                     {renderMsg.state ? (
@@ -56,7 +56,7 @@ const Fluid = () => {
                             
                             <Typist.Delay ms={250} />
                             <br />
-                            <span>* <a href={""} className="flash">My Work</a></span>
+                            <span>* <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"} className="flash">My Work</a></span>
                             <br />
                             {''}
                         </Typist>
