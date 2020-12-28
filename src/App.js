@@ -1,10 +1,10 @@
 import React from "react";
 import './App.css';
-import Landing from "./components/landing";
+import LandingPG from "./pages/landingPg";
 
 function App() {
   return (
-    <Landing />
+    <LandingPG />
   );
 }
 
