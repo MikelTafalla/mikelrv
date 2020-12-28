@@ -1,0 +1,9 @@
+.pr-3 {
+    padding-right: 10px
+}
+.navbar {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    margin-bottom: 10px;
+}

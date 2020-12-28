@@ -3,13 +3,15 @@ import Typist from "react-typist";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { MDBIcon } from "mdbreact";
-import "./landing.css"
+import "./landing.css";
+import Navbar from "./navbar"
 
 
 const ShellTerminal = () => {
 
     return (
         <React.Fragment>
+
             <div className="text-center">
                 <img src={require("../assets/images/MikelColumn.png").default} className="rounded" alt="mikel" />
                 <ul className="social-list list-inline py-2 mx-auto">
@@ -32,6 +34,7 @@ const ShellTerminal = () => {
                 
             </div>
             <div className="Typist bash"> 
+            <Navbar />
                 $Welcome to mikelrv Shell! (V1.0.0)
                 <br></br>
                 <br></br>
