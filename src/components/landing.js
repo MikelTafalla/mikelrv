@@ -41,7 +41,7 @@ const ShellTerminal = () => {
 
                             <Typist.Delay ms={250} />
                             <br />
-                            <span>$ <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"} className="flash">Resume</a></span>
+                            <span>$ <a href={"https://drive.google.com/file/d/1FXT9ZzMn6tvFQcJbAZbvFK_7vAgi1Cir/view"} className="flash" target="_blank" rel="noopener noreferrer">Resume</a></span>
                             <br />
 
 
