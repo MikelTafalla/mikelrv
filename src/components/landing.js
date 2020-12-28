@@ -36,12 +36,13 @@ const Fluid = () => {
             </ul>
                 
             </div>
-            <div className="Typist">
+            <div className="Typist bash"> $Welcome to mikelrv Shell! (V1.0.0)
                 <Typist
                     className="Typist-header"
                     avgTypingDelay={50}
                     startDelay={250}
                     onTypingDone={() => onHeaderTyped()}
+                    cursor={{ hideWhenDone: true }}
                 >
                     <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"}>Hi!!</a>
                 </Typist>
@@ -52,17 +53,20 @@ const Fluid = () => {
                             avgTypingDelay={50}
                             cursor={{ hideWhenDone: true }}
                         >
-                            * My name is Mikel Rodriguez. I'm a Full-Stack Developer and Spanish Linguist with a Master's degree in Iberian Linguistics. Welcome to my personal website!
+                            $ My name is Mikel Rodriguez. I'm a Full-Stack Developer and Spanish Linguist with a Master's degree in Iberian Linguistics. Welcome to my personal website!
                             
                             <Typist.Delay ms={250} />
                             <br />
-                            <span>* <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"} className="flash">My Work</a></span>
+                            <span>$ <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"} className="flash">My Work</a></span>
                             <br />
                             {''}
                         </Typist>
                     ) : null}
                 </div>
             </div>
+            <br></br>
+            <br></br>
+            <br></br>
         </React.Fragment>
     )
 
