@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 // import Navbar from "./components/navbar"
 import LandingPG from "./pages/landingPg";
+import AboutPG from "./pages/aboutPg";
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       {/* <Navbar /> */}
         <Route exact path="/" component={LandingPG} />
         <Route exact path="/home" component={LandingPG} />
-        {/* <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />  */}
+        <Route exact path="/about" component={AboutPG} />
+        {/*<Route exact path="/contact" component={Contact} />  */}
       {/* <Footer /> */}
     </div>
    
