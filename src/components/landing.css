@@ -1,10 +1,17 @@
-body {
+.container {
     font-family: monospace;
     font-size: 18px;
     line-height: 1.7;
     background-color: #333;
-    background-image: url("../assets/images/blueTechSea.jpg");
-    padding: 25px 50px;
+    background: url("../assets/images/blueTechSea.jpg");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;  
+    bottom: 0; 
+    min-width: 100%;  
+    min-height: 100%;
 }
 img {
     padding-bottom: 5%;

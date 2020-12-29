@@ -5,8 +5,8 @@ import "./about.css"
 const About = () => {
     return (
         <React.Fragment>
-             <div></div>
-            <div className="test">
+            <div></div>
+            <div className="intro">
                
                 <div className="card text-center">
                     <div className="card-header">
@@ -19,6 +19,14 @@ const About = () => {
                         <a href="https://drive.google.com/file/d/1FXT9ZzMn6tvFQcJbAZbvFK_7vAgi1Cir/view" className="btn btn-dark" target="_blank" rel="noopener noreferrer">Resume</a>
                     </div>
                 </div>
+                {/* point added for css purposes */}
+                <div className="point">.</div>
+            </div>
+
+            <div className="tech">
+                <br>
+                </br>
+                <br></br>
             </div>
         </React.Fragment>
     );
