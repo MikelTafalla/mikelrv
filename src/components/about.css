@@ -39,5 +39,26 @@
 }
 
 .edHead {
-    width: 300px;
+    width: 100%;
+    z-index: 1;
+}
+.edBinary {
+    width: 100%;
+    z-index: 2;
+    background: url("../assets/images/binary.png") no-repeat center;
+    background-size: cover;
+    background-color: white;
+    min-height: 100%;
+}
+
+.techHeader {
+    margin-top: 2%;
+}
+
+.table-headers {
+    background-color: #73a3f0;
+}
+
+.table-rows {
+    background-color: #EEF2FE;
 }

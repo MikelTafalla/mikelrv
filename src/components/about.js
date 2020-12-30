@@ -165,34 +165,116 @@ const About = () => {
 
             <div className="education">
 
-                <div className="card text-center education">
-                    <h5 className="card-title">Profesional Experience & Education</h5>
+                <div className="card education">
+                    <h5 className="card-title text-center techHeader">Profesional Experience & Education</h5>
 
                     <div className="card-body">
                         <br></br>
                         <div className="card-text">
-                            {/* <div className="paragraphs"> */}
-                                <div className="row">
 
-                                    <div class="col-md-4">
-                                        <div className="clearfix content-heading">
-                                            <img className="pull-left edHead" src={require("../assets/images/edHead.png").default} alt="edHead.png" />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p>Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                            <div className="row">
+
+                                <div className="col-md-4 ">
+                                    <div className="clearfix content-heading edBinary">
+                                        <img className="pull-left edHead" src={require("../assets/images/edHead.png").default} alt="edHead.png" />
                                     </div>
                                 </div>
-                                {/* </div> */}
 
-                            {/* </div> */}
-                            {/*//row*/}
+                                <div className="col-md-8">
 
+                                    <table className="table table-striped">
+                                        <thead className="thead-dark">
+                                            <tr className="table-headers">
+                                                <th scope="col">Company</th>
+                                                <th scope="col">Position</th>
+                                                <th scope="col">Dates</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr className="table-rows">
+                                                <td>
+                                                    <ul>
+                                                        <li>Freelance:</li>
+                                                        <ul>
+                                                            <li>CleanSafe Maintenance</li>
+                                                            <li>HospiceMD</li>
+                                                            <li>VeiraMal Consulting</li>
+                                                        </ul>
+                                                    </ul>
+                                                </td> 
+                                                <td>Full-Stack Developer</td>
+                                                <td>04/2020 - 10/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <ul>
+                                                        <li>University of California, Santa Barbara</li>
+                                                        <li>SigloXXI Spanish Academy</li>
+                                                        <li>Defense Language Institute</li>
+                                                    </ul>
+                                                </td>
+                                                <td>Spanish & Literature Professor</td>
+                                                <td>09/2014 - 07/2020</td>   
+                                            </tr>
+                                            <tr className="table-rows">
+                                                <td>BioSB, Inc</td>
+                                                <td>Customer Service and Sales</td>
+                                                <td>10/2017 - 07/2018</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Immigrant Legal Defense Center</td>
+                                                <td>Volunteer Translator and Interpreter</td>
+                                                <td>06/2019 - Present</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table className="table table-striped">
+                                        <thead className="thead-light">
+                                            <tr className="table-headers">
+                                                <th scope="col">Institution</th>
+                                                <th scope="col">Academic Field</th>
+                                                <th scope="col">Degree Level</th>
+                                                <th scope="col">Dates</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr className="table-rows">
+                                                <td>University of California, Los Angeles</td>
+                                                <td>Full-Stack MERN Web Development</td>
+                                                <td>Bootcamp</td>
+                                                <td>03/2020 - 09/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <td>University of California, Santa Barbara</td>
+                                                <td>Iberian Linguistics</td>
+                                                <td>Master</td>
+                                                <td>09/2014 - 06/2016</td>
+                                            </tr>
+                                            <tr className="table-rows">
+                                                <td>University of Deusto, Bilbao (Spain)</td>
+                                                <td>Modern Languages</td>
+                                                <td>Bacherlor</td>
+                                                <td>09/2010 - 05/2014</td>
+                                            </tr>
+                                            <tr>
+                                                <td>University of St. Andrews (Scotland)</td>
+                                                <td>English and Latin American History and Literature</td>
+                                                <td>Erasmus Program B.A.</td>
+                                                <td>08/2012 - 05/2013</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            
-            </div>
+
+            </div> {/* End Education div*/}
         </React.Fragment>
     );
 };
