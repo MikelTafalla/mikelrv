@@ -14,7 +14,7 @@
     width: 60%;
     padding: 10px;
     margin-top: 5%;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 
 }
 .tech {
@@ -29,4 +29,15 @@
 
 .with-margin {
     margin-bottom: 20px;
+}
+
+.education {
+    margin-top: 0px;
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.edHead {
+    width: 300px;
 }

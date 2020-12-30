@@ -1,4 +1,4 @@
-.container {
+.wrapper {
     font-family: monospace;
     font-size: 18px;
     line-height: 1.7;
@@ -12,9 +12,13 @@
     bottom: 0; 
     min-width: 100%;  
     min-height: 100%;
+    padding: 25px 50px;
+    overflow-y: scroll;
 }
+
 img {
-    padding-bottom: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
 }
 .Typist a {
     color: inherit;
@@ -84,5 +88,6 @@ img {
     background: #0080ff;
     text-shadow: none;
 }
+
 
 
