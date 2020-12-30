@@ -10,6 +10,7 @@ const About = () => {
     return (
         <React.Fragment>
             <div></div>
+            
             <div className="intro">
                 <Navbar />
                 <div className="card text-center introcard">
@@ -201,7 +202,7 @@ const About = () => {
                                                             <li>VeiraMal Consulting</li>
                                                         </ul>
                                                     </ul>
-                                                </td> 
+                                                </td>
                                                 <td>Full-Stack Developer</td>
                                                 <td>04/2020 - 10/2020</td>
                                             </tr>
@@ -214,7 +215,7 @@ const About = () => {
                                                     </ul>
                                                 </td>
                                                 <td>Spanish & Literature Professor</td>
-                                                <td>09/2014 - 07/2020</td>   
+                                                <td>09/2014 - 07/2020</td>
                                             </tr>
                                             <tr className="table-rows">
                                                 <td>BioSB, Inc</td>
@@ -269,9 +270,10 @@ const About = () => {
 
                                 </div>
 
-                            </div>
+                            </div> {/* Ends Row div */}
                         </div>
                     </div>
+                    <a href="https://drive.google.com/file/d/1FXT9ZzMn6tvFQcJbAZbvFK_7vAgi1Cir/view" className="btn btn-primary btn-lg btn-block" target="_blank" rel="noopener noreferrer">Download Online Resume</a>
                 </div>
 
             </div> {/* End Education div*/}

@@ -5,8 +5,7 @@
     background: url("../assets/images/whiteVector.png") no-repeat center;
     background-size: cover;
     background-color: white;
-    min-height: 100%;
-    
+    min-height: 100%;   
 }
 
 .introcard {
@@ -14,7 +13,6 @@
     width: 60%;
     padding: 10px;
     margin-top: 5%;
-    /* margin-bottom: 5%; */
 
 }
 .tech {
@@ -62,3 +60,4 @@
 .table-rows {
     background-color: #EEF2FE;
 }
+
