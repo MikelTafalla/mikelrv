@@ -4,13 +4,14 @@ import "./about.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3, faJsSquare, faNodeJs, faReact, faNpm, faBootstrap, faKorvue } from '@fortawesome/free-brands-svg-icons';
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
+import Navbar from "./navbar"
 
 const About = () => {
     return (
         <React.Fragment>
             <div></div>
             <div className="intro">
-
+                <Navbar />
                 <div className="card text-center introcard">
                     <div className="card-header">
                         Mikel Rodriguez
@@ -58,7 +59,6 @@ const About = () => {
                                     <div className="item-inner">
                                         <div className="item-icon"><img className=" mr-2" src={require("../assets/icons/jquery2.png").default} alt="jQuery" /></div>
                                         <h4 className="item-title">jQuery</h4>
-                                        {/* <div className="item-desc">6 months experience</div> */}
                                     </div>
                                     {/*//item-inner*/}
                                 </div>

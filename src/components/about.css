@@ -6,6 +6,7 @@
     background-size: cover;
     background-color: white;
     min-height: 100%;
+    
 }
 
 .introcard {
@@ -29,4 +30,3 @@
 .with-margin {
     margin-bottom: 20px;
 }
-
