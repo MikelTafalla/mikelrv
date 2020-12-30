@@ -8,7 +8,7 @@
     min-height: 100%;
 }
 
-.card {
+.introcard {
     margin: auto;
     width: 60%;
     padding: 10px;
@@ -17,8 +17,16 @@
 
 }
 .tech {
-    background-color: blue;
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-top: 2%;
 }
 .point {
     color:transparent
 }
+
+.with-margin {
+    margin-bottom: 20px;
+}
+
