@@ -38,8 +38,9 @@
 }
 
 .edHead {
-    width: 100%;
+    width: 92%;
     z-index: 1;
+    margin-left: 4%;
 }
 .edBinary {
     width: 100%;
@@ -61,4 +62,5 @@
 .table-rows {
     background-color: #EEF2FE;
 }
+
 

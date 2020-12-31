@@ -1,7 +1,8 @@
 import React from "react";
-import Technologies from "./aboutTech"
-import Intro from "./aboutIntro"
-import Education from "./aboutEd"
+import Technologies from "./aboutTech";
+import Intro from "./aboutIntro";
+import Education from "./aboutEd";
+
 
 const About = () => {
     return (
