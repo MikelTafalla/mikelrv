@@ -33,7 +33,7 @@ const ShellTerminal = () => {
                                 <Typist.Delay ms={250} />
 
                                 <br />
-                                <span>$ <a href={"https://www.linkedin.com/in/mikel-rodriguez-villar/"} className="flash">My Work</a></span>
+                                <span>$ <Link to="/portfolio" className="flash">My Work</Link></span>
                                 <br />
 
                                 <Typist.Delay ms={250} />

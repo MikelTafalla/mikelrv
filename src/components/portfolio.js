@@ -8,9 +8,11 @@ const Portfolio = () => {
         <React.Fragment>
             <div className="wrap">
                 < Navbar />
+                
             </div>
         </React.Fragment>
     );
 };
 
 export default Portfolio;
+

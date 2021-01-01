@@ -109,9 +109,8 @@ const AboutEd = () => {
                     </div>
                     <a href="https://drive.google.com/file/d/1FXT9ZzMn6tvFQcJbAZbvFK_7vAgi1Cir/view" className="btn btn-primary btn-lg btn-block" target="_blank" rel="noopener noreferrer">Download Online Resume</a>
                 </div>
-
             </div> {/* End Education div*/}
-        
+
 
         </React.Fragment>
     );
