@@ -6,10 +6,10 @@ import "./portfolio.css"
 const Portfolio = () => {
     return (
         <React.Fragment>
-            <div className="wrap">
+            <section className="wrap">
                 < Navbar />
                 
-            </div>
+            </section>
         </React.Fragment>
     );
 };

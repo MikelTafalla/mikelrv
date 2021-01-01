@@ -6,4 +6,11 @@
     outline: none !important;
     box-shadow: none !important;
     margin-bottom: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.7;
+}
+.size {
+    width: 100px;
+    margin-left: 15px;
 }

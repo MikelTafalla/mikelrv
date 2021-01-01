@@ -8,14 +8,13 @@ import "./navbar.css"
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-transparent bg-transparent">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span><MDBIcon icon="bars" size="2x" /></span>
             </button>
             <div className="navbar-brand">
-                <MDBIcon icon="circle" className="red-text pr-3" />
-                <MDBIcon icon="circle" className="amber-text pr-3" />
-                <MDBIcon icon="circle" className="green-text pr-3" />
+            <div className="item-icon"><img className="mr-5 size" src={require("../assets/icons/brandLogo.png").default} alt="brandlogo" /></div>
+                
             </div>
 
             <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
