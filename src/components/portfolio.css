@@ -1,17 +1,5 @@
-/* .wrap {
+.wrap {
     font-family: monospace;
     font-size: 18px;
     line-height: 1.7;
-    background: url("../assets/images/headPortfolio.jpg") no-repeat center;
-    background-size: cover;
-    background-color: white;  
-    position: fixed;
-    top: 0;
-    left: 0; 
-    right: 0;  
-    bottom: 0; 
-    min-width: 100%;  
-    min-height: 100%;
-    padding: 25px 50px;
-    overflow-y: scroll;
-} */
+}

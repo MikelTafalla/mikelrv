@@ -14,7 +14,6 @@ const Navbar = () => {
             </button>
             <div className="navbar-brand">
             <div className="item-icon"><img className="mr-5 size" src={require("../assets/icons/brandLogo.png").default} alt="brandlogo" /></div>
-                
             </div>
 
             <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
