@@ -2,16 +2,19 @@
     {
         "name":"Cleansafe",
         "path":"cleansafe1.png",
-        "gif":"cleansafe.gif"
+        "gif":"cleansafe.gif",
+        "type": ["frontend"]
     },
     {
         "name":"ub04",
         "path":"ub04.jpg",
-        "gif":"ub04.gif"
+        "gif":"ub04.gif",
+        "type": ["fs"]
     },
     {
         "name":"Veiramal",
         "path":"veiramal.jpg",
-        "gif":"veiramal.gif"
+        "gif":"veiramal.gif",
+        "type": ["fs", "react"]
     }
 ]

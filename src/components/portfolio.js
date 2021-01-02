@@ -6,39 +6,116 @@ import Projects from "./projects.json"
 
 const Portfolio = () => {
     const [shown, setShown] = useState(false);
-    const [name, setName] = useState("")
+    const [name, setName] = useState("");
+    const [projectType, setProjectType] = useState("");
    
-    // const handleMouseOver = (event) => {
-    //     setName(event.target.alt);
-    //     console.log(name)
-    //   };
+    const handleClick = (event) => {
+        setProjectType(event.target.value);
+      };
+    // Creates gallery through conditional rendering
+    let gallery;
+    if (projectType === "" || projectType === "client") {
+        gallery =
+        <div className="row text-center text-lg-left">
+            {Projects.map(project => (
+                <div className="col-lg-4 col-md-6 col-sm-6 " key={project.name} data-info={project.name}>
+
+                    {shown && name === project.name ?
+                        <img className="img-fluid img-thumbnail zoom buttons" src={require(`../assets/giphy/${project.gif}`).default} onMouseLeave={() => {setShown(false); setName("")}} alt={project.name} />
+                        :
+                        <img className="img-fluid img-thumbnail zoom" src={require(`../assets/projects/${project.path}`).default} alt={project.name} onMouseEnter={() => {setShown(true); setName(project.name)}}
+                        />
+                    }
+                    <button className="btn btn-light btn-lg btn-block">View Case Study</button>
+
+                </div>
+            ))}
+
+        </div>
+    } else if (projectType === "frontend"){
+        gallery =
+        <div className="row text-center text-lg-left">
+            {Projects.filter(project => project.type.includes("frontend")).map(display => (
+                <div className="col-lg-4 col-md-6 col-sm-6 " key={display.name} data-info={display.name}>
+
+                    {shown && name === display.name ?
+                        <img className="img-fluid img-thumbnail zoom buttons" src={require(`../assets/giphy/${display.gif}`).default} onMouseLeave={() => {setShown(false); setName("")}} alt={display.name} />
+                        :
+                        <img className="img-fluid img-thumbnail zoom" src={require(`../assets/projects/${display.path}`).default} alt={display.name} onMouseEnter={() => {setShown(true); setName(display.name)}}
+                        />
+                    }
+                    <button className="btn btn-light btn-lg btn-block">View Case Study</button>
+
+                </div>
+            ))}
+
+        </div>
+    } else if (projectType === "fs"){
+        gallery =
+        <div className="row text-center text-lg-left">
+            {Projects.filter(project => project.type.includes("fs")).map(display => (
+                <div className="col-lg-4 col-md-6 col-sm-6 " key={display.name} data-info={display.name}>
+
+                    {shown && name === display.name ?
+                        <img className="img-fluid img-thumbnail zoom buttons" src={require(`../assets/giphy/${display.gif}`).default} onMouseLeave={() => {setShown(false); setName("")}} alt={display.name} />
+                        :
+                        <img className="img-fluid img-thumbnail zoom" src={require(`../assets/projects/${display.path}`).default} alt={display.name} onMouseEnter={() => {setShown(true); setName(display.name)}}
+                        />
+                    }
+                    <button className="btn btn-light btn-lg btn-block">View Case Study</button>
+
+                </div>
+            ))}
+
+        </div>
+    } else if (projectType === "react"){
+        gallery =
+        <div className="row text-center text-lg-left">
+            {Projects.filter(project => project.type.includes("react")).map(display => (
+                <div className="col-lg-4 col-md-6 col-sm-6 " key={display.name} data-info={display.name}>
+
+                    {shown && name === display.name ?
+                        <img className="img-fluid img-thumbnail zoom buttons" src={require(`../assets/giphy/${display.gif}`).default} onMouseLeave={() => {setShown(false); setName("")}} alt={display.name} />
+                        :
+                        <img className="img-fluid img-thumbnail zoom" src={require(`../assets/projects/${display.path}`).default} alt={display.name} onMouseEnter={() => {setShown(true); setName(display.name)}}
+                        />
+                    }
+                    <button className="btn btn-light btn-lg btn-block">View Case Study</button>
+
+                </div>
+            ))}
+
+        </div>
+    }
     return (
         <React.Fragment>
             <section className="wrap">
                 < Navbar />
-                <div className="container">
+                <div className="container text-center">
 
                     <h1 className="font-weight-light text-center text-lg-left mt-4 mb-0">My Work</h1>
-
+                    <h6>**Hover over the images to showcase giphy</h6>
+                        {/* sets filters */}
+                        <div className="btn-group btn-group-toggle flex-wrap" data-toggle="buttons" >
+                            <button className="btn btn-primary active" onClick={handleClick} value="client" >
+                                <input type="radio" name="options" id="option1" autoComplete="off" defaultChecked /> Real Clients
+                            </button>
+                            <button className="btn btn-primary" onClick={handleClick} value="frontend">
+                                <input type="radio" name="options" id="option2" autoComplete="off" /> FrontEnd
+                            </button>
+                            <button className="btn btn-primary" onClick={handleClick} value="fs">
+                                <input type="radio" name="options" id="option3" autoComplete="off" /> Full-Stack
+                            </button>
+                            <button className="btn btn-primary" onClick={handleClick} value="react">
+                                <input type="radio" name="options" id="option4" autoComplete="off" /> React/ Node
+                            </button>
+                        </div>
                     <div className="mt-2 mb-5">
 
-                        <div className="row text-center text-lg-left">
-                            {Projects.map(project => (
-                                <div className="col-lg-4 col-md-6 col-sm-6 zoom" key={project.name} data-info={project.name}>
+                        {gallery}
 
-                                        {shown && name === project.name ?
-                                            <img className="img-fluid img-thumbnail" src={require(`../assets/giphy/${project.gif}`).default} onMouseLeave={() => {setShown(false); setName("")}} alt={project.name} />
-                                            :
-                                            <img className="img-fluid img-thumbnail" src={require(`../assets/projects/${project.path}`).default} alt={project.name} onMouseEnter={() => {setShown(true); setName(project.name)}}
-                                            />
-                                        }
-
-                                </div>
-                            ))}
-
-                        </div>
-
-                    </div>
+                    </div> 
+                    
                 </div>
             </section>
         </React.Fragment>
