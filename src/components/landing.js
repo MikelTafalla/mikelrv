@@ -2288,7 +2288,7 @@ const Portfolio = () => {
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 50 20000"
-                                clip-path="url(#clip)"
+                                clipPath="url(#clip)"
                                 className={reverse ? "reverse" : ""}
                             >
                                 <defs>

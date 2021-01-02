@@ -4,7 +4,7 @@
     text-align: center;
     transform: rotate(180deg) scaleX(-1);
     z-index: 0;
-    position: absolute;
+    position: fixed;
     margin-right: 30%;
     margin-left: 2%;
   }
