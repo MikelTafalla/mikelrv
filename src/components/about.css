@@ -62,4 +62,9 @@
 .table-rows {
     background-color: #EEF2FE;
 }
-
+.download {
+    margin-left: 48%;
+}
+.downloadText {
+    text-align: center;
+}

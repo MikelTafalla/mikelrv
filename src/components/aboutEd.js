@@ -1,5 +1,6 @@
 import React from "react";
-import "./about.css"
+import "./about.css";
+import { MDBIcon } from "mdbreact";
 
 const AboutEd = () => {
     return (
@@ -107,7 +108,11 @@ const AboutEd = () => {
                             </div> {/* Ends Row div */}
                         </div>
                     </div>
-                    <a href="https://drive.google.com/file/d/1FXT9ZzMn6tvFQcJbAZbvFK_7vAgi1Cir/view" className="btn btn-primary btn-lg btn-block" target="_blank" rel="noopener noreferrer">Download Online Resume</a>
+                    
+                    
+                    <a href="https://drive.google.com/file/d/1FXT9ZzMn6tvFQcJbAZbvFK_7vAgi1Cir/view" target="_blank" rel="noopener noreferrer"><MDBIcon className="download" icon="arrow-circle-down" size="3x"/></a>
+                    <label className="downloadText">Download Resume</label>
+ 
                 </div>
             </div> {/* End Education div*/}
 
