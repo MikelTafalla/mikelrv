@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./navbar";
 import "./portfolio.css"
+import Projects from "./projects.json"
 
 
 const Portfolio = () => {
+    const [shown, setShown] = useState(false);
+    const [name, setName] = useState("")
+   
+    // const handleMouseOver = (event) => {
+    //     setName(event.target.alt);
+    //     console.log(name)
+    //   };
     return (
         <React.Fragment>
             <section className="wrap">
@@ -15,22 +23,18 @@ const Portfolio = () => {
                     <div className="mt-2 mb-5">
 
                         <div className="row text-center text-lg-left">
+                            {Projects.map(project => (
+                                <div className="col-lg-4 col-md-6 col-sm-6 zoom" key={project.name} data-info={project.name}>
 
-                            <div className="col-lg-4 col-md-6 col-sm-6">
-                                <a href="#" className="d-block mb-4 h-100">
-                                    <img className="img-fluid img-thumbnail" src={require("../assets/projects/cleansafe1.png").default} alt="" />
-                                </a>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-6">
-                                <a href="#" className="d-block mb-4 h-100">
-                                    <img className="img-fluid img-thumbnail" src={require("../assets/projects/ub04.jpg").default} alt="" />
-                                </a>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-sm-6">
-                                <a href="#" className="d-block mb-4 h-100">
-                                    <img className="img-fluid img-thumbnail" src={require("../assets/projects/veiramal.jpg").default} alt="" />
-                                </a>
-                            </div>
+                                        {shown && name === project.name ?
+                                            <img className="img-fluid img-thumbnail" src={require(`../assets/giphy/${project.gif}`).default} onMouseLeave={() => {setShown(false); setName("")}} alt={project.name} />
+                                            :
+                                            <img className="img-fluid img-thumbnail" src={require(`../assets/projects/${project.path}`).default} alt={project.name} onMouseEnter={() => {setShown(true); setName(project.name)}}
+                                            />
+                                        }
+
+                                </div>
+                            ))}
 
                         </div>
 
