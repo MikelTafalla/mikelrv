@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "./navbar";
-import "./portfolio.css"
-import Projects from "./projects.json"
+import "./portfolio.css";
+import Projects from "./projects.json";
+import Practice from  "./practice.json";
 
 
 const Portfolio = () => {
@@ -86,6 +87,24 @@ const Portfolio = () => {
             ))}
 
         </div>
+    } else if (projectType === "class") {
+        gallery =
+        <div className="row text-center text-lg-left">
+            {Practice.map(project => (
+                <div className="col-lg-4 col-md-6 col-sm-6 " key={project.name} data-info={project.name}>
+
+                    {shown && name === project.name ?
+                        <img className="img-fluid img-thumbnail zoom buttons" src={require(`../assets/giphy/practice/${project.gif}`).default} onMouseLeave={() => {setShown(false); setName("")}} alt={project.name} />
+                        :
+                        <img className="img-fluid img-thumbnail zoom" src={require(`../assets/practice/${project.path}`).default} alt={project.name} onMouseEnter={() => {setShown(true); setName(project.name)}}
+                        />
+                    }
+                    <button className="btn btn-light btn-lg btn-block">View Code</button>
+
+                </div>
+            ))}
+
+        </div>
     }
     return (
         <React.Fragment>
@@ -94,7 +113,7 @@ const Portfolio = () => {
                 <div className="container text-center">
 
                     <h1 className="font-weight-light text-center text-lg-left mt-4 mb-0">My Work</h1>
-                    <h6>**Hover over the images to showcase giphy</h6>
+                    <h6>**Hover over the images to showcase giphy or click if on a phone</h6>
                         {/* sets filters */}
                         <div className="btn-group btn-group-toggle flex-wrap" data-toggle="buttons" >
                             <button className="btn btn-primary active" onClick={handleClick} value="client" >
@@ -108,6 +127,9 @@ const Portfolio = () => {
                             </button>
                             <button className="btn btn-primary" onClick={handleClick} value="react">
                                 <input type="radio" name="options" id="option4" autoComplete="off" /> React/ Node
+                            </button>
+                            <button className="btn btn-primary" onClick={handleClick} value="class">
+                                <input type="radio" name="options" id="option5" autoComplete="off" /> Class / Practice
                             </button>
                         </div>
                     <div className="mt-2 mb-5">
