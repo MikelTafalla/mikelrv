@@ -1,18 +1,18 @@
 [
     {
-        "name":"Cleansafe",
+        "name":"Cleansafe Maintenance",
         "path":"cleansafe1.png",
         "gif":"cleansafe.gif",
         "type": ["frontend"]
     },
     {
-        "name":"ub04",
+        "name":"Hospice MD",
         "path":"ub04.jpg",
         "gif":"ub04.gif",
         "type": ["fs"]
     },
     {
-        "name":"Veiramal",
+        "name":"Veiramal Consultant",
         "path":"veiramal.jpg",
         "gif":"veiramal.gif",
         "type": ["fs", "react"]

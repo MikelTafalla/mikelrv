@@ -10,37 +10,37 @@
         "gif":"budget_tracker.gif"
     },
     {
-        "name":"exerciseMe",
+        "name":"exercise_Me",
         "path":"exerciseMe.jpg",
         "gif":"exerciseMe.gif"
     },
     {
-        "name":"burger",
+        "name":"burger App",
         "path":"burger.jpg",
         "gif":"burger.gif"
     },
     {
-        "name":"weather",
+        "name":"weather App",
         "path":"weather.jpg",
         "gif":"weather.gif"
     },
     {
-        "name":"notes",
+        "name":"notes_taker",
         "path":"notes.jpg",
         "gif":"notes.gif"
     },
     {
-        "name":"scheduler",
+        "name":"Work_Day scheduler",
         "path":"scheduler.jpg",
         "gif":"scheduler.gif"
     },
     {
-        "name":"password",
+        "name":"password generator",
         "path":"password.jpg",
         "gif":"password.gif"
     },
     {
-        "name":"readMe",
+        "name":"readMe generator",
         "path":"readMe.jpg",
         "gif":"readMe.gif"
     }

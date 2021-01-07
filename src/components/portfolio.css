@@ -21,5 +21,12 @@ img {
   .buttons {
     margin-bottom: 10%;
   }
-  
+  .btn {
+    font-size: 12px !important; 
+  }
+
+  p {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+  }
   

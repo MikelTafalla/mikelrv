@@ -27,7 +27,9 @@ const Portfolio = () => {
                         <img className="img-fluid img-thumbnail zoom" src={require(`../assets/projects/${project.path}`).default} alt={project.name} onMouseEnter={() => {setShown(true); setName(project.name)}}
                         />
                     }
-                    <button className="btn btn-light btn-lg btn-block">View Case Study</button>
+                    <button className="btn btn-light btn-lg btn-block">
+                    <p>Client: {project.name}</p>
+                    View Case Study</button>
 
                 </div>
             ))}
@@ -45,7 +47,9 @@ const Portfolio = () => {
                         <img className="img-fluid img-thumbnail zoom" src={require(`../assets/projects/${display.path}`).default} alt={display.name} onMouseEnter={() => {setShown(true); setName(display.name)}}
                         />
                     }
-                    <button className="btn btn-light btn-lg btn-block">View Case Study</button>
+                    <button className="btn btn-light btn-lg btn-block">
+                    <p>Client: {display.name}</p>
+                    View Case Study</button>
 
                 </div>
             ))}
@@ -63,7 +67,9 @@ const Portfolio = () => {
                         <img className="img-fluid img-thumbnail zoom" src={require(`../assets/projects/${display.path}`).default} alt={display.name} onMouseEnter={() => {setShown(true); setName(display.name)}}
                         />
                     }
-                    <button className="btn btn-light btn-lg btn-block">View Case Study</button>
+                    <button className="btn btn-light btn-lg btn-block">
+                    <p>Client: {display.name}</p>
+                    View Case Study</button>
 
                 </div>
             ))}
@@ -81,7 +87,9 @@ const Portfolio = () => {
                         <img className="img-fluid img-thumbnail zoom" src={require(`../assets/projects/${display.path}`).default} alt={display.name} onMouseEnter={() => {setShown(true); setName(display.name)}}
                         />
                     }
-                    <button className="btn btn-light btn-lg btn-block">View Case Study</button>
+                    <button className="btn btn-light btn-lg btn-block">
+                    <p>Client: {display.name}</p>
+                    View Case Study</button>
 
                 </div>
             ))}
@@ -99,7 +107,9 @@ const Portfolio = () => {
                         <img className="img-fluid img-thumbnail zoom" src={require(`../assets/practice/${project.path}`).default} alt={project.name} onMouseEnter={() => {setShown(true); setName(project.name)}}
                         />
                     }
-                    <button className="btn btn-light btn-lg btn-block">View Code</button>
+                    <button className="btn btn-light btn-lg btn-block">
+                    <p>Project: {project.name}</p>    
+                    View Code</button>
 
                 </div>
             ))}
@@ -126,7 +136,7 @@ const Portfolio = () => {
                                 <input type="radio" name="options" id="option3" autoComplete="off" /> Full-Stack
                             </button>
                             <button className="btn btn-primary" onClick={handleClick} value="react">
-                                <input type="radio" name="options" id="option4" autoComplete="off" /> React/ Node
+                                <input type="radio" name="options" id="option4" autoComplete="off" /> React / Node
                             </button>
                             <button className="btn btn-primary" onClick={handleClick} value="class">
                                 <input type="radio" name="options" id="option5" autoComplete="off" /> Class / Practice
