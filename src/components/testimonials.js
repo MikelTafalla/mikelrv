@@ -5,7 +5,7 @@ import "./testimonials.css";
 const Reviews = () => {
     const [readMore, setReadMore] = useState(false);
     const [name, setName] = useState("");
-    
+
     return (
         <React.Fragment>
             <section className="section-medium section-arrow--bottom-center section-arrow-primary-color">
@@ -28,7 +28,7 @@ const Reviews = () => {
                                     <img width="180" height="180" src={require(`../assets/images/testimonial/${testimonial.photo}`).default} alt={testimonial.name} />
                                 </div>
                                 <div className="testimonial-content">
-                                <p className="text">{readMore && name === testimonial.client ? testimonial.extracontent : testimonial.message}</p><a className="aColor" onClick={(event)=>{setName(event.target.id);setReadMore(!readMore)}}><p id={testimonial.client}>{readMore && name === testimonial.client ? "Read Less <<" : "Read More >>"}</p></a>
+                                <p className="text">{readMore && name === testimonial.client ? testimonial.extracontent : testimonial.message}</p><button className="styleBtn" onClick={(event)=>{setName(event.target.id);setReadMore(!readMore)}}><p id={testimonial.client}>{readMore && name === testimonial.client ? "Read Less <<" : "Read More >>"}</p></button>
                                 </div>
                                 <div className="testimonial-meta">
                                     <strong className="testimonial-name" itemProp="name">{testimonial.name}</strong>
