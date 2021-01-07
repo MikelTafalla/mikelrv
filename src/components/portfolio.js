@@ -3,6 +3,7 @@ import Navbar from "./navbar";
 import "./portfolio.css";
 import Projects from "./projects.json";
 import Practice from  "./practice.json";
+import Testimonials from "./testimonials";
 
 
 const Portfolio = () => {
@@ -150,6 +151,7 @@ const Portfolio = () => {
                     
                 </div>
             </section>
+            <Testimonials />
         </React.Fragment>
     );
 };
