@@ -3,7 +3,7 @@ body {
 }
 .text {
     font-family: monospace !important;
-    font-size: 14px !important;
+    font-size: 1.3em !important;
     line-height: 1.7 !important;
 }
 
@@ -134,4 +134,7 @@ section {
 img {
     max-width: 100%;
     height: auto;
+}
+.aColor {
+    color: blue !important;
 }

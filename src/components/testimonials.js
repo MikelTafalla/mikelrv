@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Testimonials from "./testimonials.json";
 import "./testimonials.css";
 
 const Reviews = () => {
+    const [readMore, setReadMore] = useState(false);
+    const [name, setName] = useState("");
+    
     return (
         <React.Fragment>
             <section className="section-medium section-arrow--bottom-center section-arrow-primary-color">
@@ -19,17 +22,17 @@ const Reviews = () => {
                     <div className="row testimonial-three testimonial-three--col-three">
 
                     {Testimonials.map(testimonial => (
-                        <div className="col-md-4 testimonial-three-col">
+                        <div className="col-lg-4 col-md-6 col-sm-12 testimonial-three-col" key={testimonial.client}>
                             <div className="testimonial-inner">
-                                <div className="testimonial-image" itemprop="image">
-                                    <img width="180" height="180" src={require(`../assets/images/testimonial/${testimonial.photo}`).default} alt="" />
+                                <div className="testimonial-image" itemProp="image">
+                                    <img width="180" height="180" src={require(`../assets/images/testimonial/${testimonial.photo}`).default} alt={testimonial.name} />
                                 </div>
                                 <div className="testimonial-content">
-                                <p className="text">{testimonial.message}</p>
+                                <p className="text">{readMore && name === testimonial.client ? testimonial.extracontent : testimonial.message}</p><a className="aColor" onClick={(event)=>{setName(event.target.id);setReadMore(!readMore)}}><p id={testimonial.client}>{readMore && name === testimonial.client ? "Read Less <<" : "Read More >>"}</p></a>
                                 </div>
                                 <div className="testimonial-meta">
-                                    <strong className="testimonial-name" itemprop="name">{testimonial.name}</strong>
-                                    <span className="testimonial-job-title" itemprop="jobTitle">{testimonial.role}</span>
+                                    <strong className="testimonial-name" itemProp="name">{testimonial.name}</strong>
+                                    <span className="testimonial-job-title" itemProp="jobTitle">{testimonial.role}</span>
                                 </div>
                             </div>
                         </div>
