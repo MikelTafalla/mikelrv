@@ -6,6 +6,7 @@ const CaseStudyPage = () => {
     let [key, setKey] = useState("")
     useEffect(()=> {
         setKey(JSON.parse(localStorage.getItem("caseStudy")))
+        window.scrollTo(0, 0)
     },[])
 
     let title= "" 

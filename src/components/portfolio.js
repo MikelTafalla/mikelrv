@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./navbar";
 import "./portfolio.css";
 import Projects from "./projects.json";
@@ -11,6 +11,8 @@ const Portfolio = () => {
     const [shown, setShown] = useState(false);
     const [name, setName] = useState("");
     const [projectType, setProjectType] = useState("");
+    
+
    
     const handleClick = (event) => {
         setProjectType(event.target.value);
