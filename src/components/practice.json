@@ -2,46 +2,55 @@
     {
         "name":"employee_directory",
         "path":"employee_directory.jpg",
-        "gif":"employee_directory.gif"
+        "gif":"employee_directory.gif",
+        "github": "https://github.com/MikelTafalla/Employee_Directory"
     },
     {
         "name":"budget_tracker",
         "path":"budget_tracker.jpg",
-        "gif":"budget_tracker.gif"
+        "gif":"budget_tracker.gif",
+        "github":"https://github.com/MikelTafalla/budget_tracker"
     },
     {
         "name":"exercise_Me",
         "path":"exerciseMe.jpg",
-        "gif":"exerciseMe.gif"
+        "gif":"exerciseMe.gif",
+        "github": "https://github.com/MikelTafalla/ExerciseMe"
     },
     {
         "name":"burger App",
         "path":"burger.jpg",
-        "gif":"burger.gif"
+        "gif":"burger.gif",
+        "github": "https://github.com/MikelTafalla/Burger_tracker"
     },
     {
         "name":"weather App",
         "path":"weather.jpg",
-        "gif":"weather.gif"
+        "gif":"weather.gif",
+        "github": "https://github.com/MikelTafalla/WeatherDash_Mikel"
     },
     {
         "name":"notes_taker",
         "path":"notes.jpg",
-        "gif":"notes.gif"
+        "gif":"notes.gif",
+        "github": "https://github.com/MikelTafalla/Note_Taker"
     },
     {
         "name":"Work_Day scheduler",
         "path":"scheduler.jpg",
-        "gif":"scheduler.gif"
+        "gif":"scheduler.gif",
+        "github": "https://github.com/MikelTafalla/Work_Day_Scheduler_Mikel"
     },
     {
         "name":"password generator",
         "path":"password.jpg",
-        "gif":"password.gif"
+        "gif":"password.gif",
+        "github": "https://github.com/MikelTafalla/Password_Generator"
     },
     {
         "name":"readMe generator",
         "path":"readMe.jpg",
-        "gif":"readMe.gif"
+        "gif":"readMe.gif",
+        "github":"https://github.com/MikelTafalla/GoodReadme_Generator"
     }
 ]

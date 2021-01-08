@@ -112,9 +112,9 @@ const Portfolio = () => {
                         />
                     }
                     
-                    <button className="btn btn-light btn-lg btn-block" >
+                    <a href={project.github} target="_blank" rel="noopener noreferrer"><button className="btn btn-light btn-lg btn-block" >
                     <p>Project: {project.name}</p>    
-                    View Code</button>
+                    View Code</button></a>
 
                 </div>
             ))}
