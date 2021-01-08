@@ -5,7 +5,9 @@
         "message":"Mikel was instrumental in enhancing our company's online presence and technological offerings. He took on our company project to update the company website to drive more customer traffic and add online capabilities for our customers.",
         "extracontent":"Mikel was instrumental in enhancing our company's online presence and technological offerings. He took on our company project to update the company website to drive more customer traffic and add online capabilities for our customers.He built a new website with improved design including a highlight of all our services and an interactive map with service area coverage. He added online capabilities that allows our customers to request a cleaning service online and an online shopping cart. Mikel was committed to producing a website that met all our needs and took our feedback into consideration. I plan to use Mikel for our next project due to his knowledge, creativity and commitment to providing a quality product, in addition to being a pleasure to work with.",
         "photo":"nancy.png",
-        "role": "CEO, CleanSafe Maintenance"
+        "role": "CEO, ",
+        "company":"CleanSafe Maintenance",
+        "url": "http://www.cleansafemaintenance.com/"
     },
     {
         "client": "hospicemd",
@@ -13,6 +15,8 @@
         "message":"As VP of Product and Application Development at HospiceMD, I was directly involved with Mikel and his team in developing a comprehensive Medical Billing Module for HospiceMD. I found him technically astute and extremely receptive...",
         "extracontent":"As VP of Product and Application Development at HospiceMD, I was directly involved with Mikel and his team in developing a comprehensive Medical Billing Module for HospiceMD. I found him technically astute and extremely receptive to understanding key concepts and translating them into an actual deliverable. Mikel along with his team exhibited a great work ethic and professionalism. I strongly recommend Mikel as an excellent web developer.",
         "photo":"suleman.png",
-        "role": "VP of Product and Application Development, HospiceMD"
+        "role": "VP of Product and Application Development, ",
+        "company":"HospiceMD",
+        "url":"https://www.hospicemd.com/"
     }
 ]

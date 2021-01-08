@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Cleansafe Website",
+        "subtitle": "Client needed to revamp 15 year old website. The company wanted to have a user interactive website to attrack more clients and add new services offered.",
+        "summary_header": "CleanSafe Maintenance",
+        "industry": "Cleaning Services",
+        "size": "15-25",
+        "url": "http://www.cleansafemaintenance.com/",
+        "requirements": ["Add GoogleMaps API", "Add New Offered Services", "Add Direct Email Submission and Call Features"],
+        "technologies": ["APIs", "HTML, CSS, Foundation framework", "Javascript, jQuery"],
+        "overview": "Revamp old website. Need of a cleaner and more elegant and professional page that would attract new clients to the company. Necesity of advertising new services, show areas of operation and experience.",
+        "approach": "Put together a team of 4 people. Gather design ideas and create a wireframe using Adobe XD. Divide the team in subteams. One subteam in charge of html, css and foundations framework and the other subteam in charge of GoogleAPI and final integration. Approach color-coding of the site following the company's Logo color-code. Images fulfill the color-coding as well. Experience and area of operation requirements tackle together with GoogleMaps API. Map displays clickable location markers that show years of experience in the area and number of contracts. For better user experience and professionalism, a direct call and direct email feature is added to their site.",
+        "testimonial":"Mikel was instrumental in enhancing our company's online presence and technological offerings. He took on our company project to update the company website to drive more customer traffic and add online capabilities for our customers. He built a new website with improved design including a highlight of all our services and an interactive map with service area coverage. He added online capabilities that allows our customers to request a cleaning service online and an online shopping cart. Mikel was committed to producing a website that met all our needs and took our feedback into consideration. I plan to use Mikel for our next project due to his knowledge, creativity and commitment to providing a quality product, in addition to being a pleasure to work with.",
+        "testimonial_name": "Nancy Pena",
+        "testimonial_role": "CEO, CleanSafe Maintenance",
+        "img": "nancy.png"
+    }
+]

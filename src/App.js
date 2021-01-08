@@ -4,6 +4,7 @@ import './App.css';
 import LandingPG from "./pages/landingPg";
 import AboutPG from "./pages/aboutPg";
 import PortfolioPG from "./pages/portfolioPg";
+import CaseStudyPG from "./pages/caseStudyPg";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route exact path="/home" component={LandingPG} />
         <Route exact path="/portfolio" component={PortfolioPG} />
         <Route exact path="/about" component={AboutPG} />
+        <Route exact path="/case_study" component={CaseStudyPG} />
         {/* <Route exact path="/contact" component={Contact} />  */}
       {/* <Footer /> */}
     </div>

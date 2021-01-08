@@ -2279,7 +2279,7 @@ const Portfolio = () => {
                                 cursor={{ hideWhenDone: true }}
                             >
                                 Hello, I'm Mikel Rodriguez.<br></br> I'm a Full-Stack Web Developer.
-                </Typist>
+                            </Typist>
                             {button === "display" ?
                                <Link to="/portfolio"> <button type="button" className="btn btn-outline-dark">My Work</button></Link>
                                 : null}

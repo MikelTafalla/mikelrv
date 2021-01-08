@@ -151,7 +151,7 @@ const Portfolio = () => {
                     
                 </div>
             </section>
-            <Testimonials />
+            <Testimonials title="What Others Say About Me"/>
         </React.Fragment>
     );
 };

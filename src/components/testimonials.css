@@ -137,6 +137,11 @@ img {
 }
 .styleBtn{
     color: blue !important;
-    border: none;
-    background-color: transparent;
+    border: none !important;
+    background-color: transparent !important;
+    font-family: monospace;
+    font-size: 1.3em !important;
+    line-height: 1.7 !important;
+    
 }
+

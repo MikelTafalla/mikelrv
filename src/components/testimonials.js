@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Testimonials from "./testimonials.json";
 import "./testimonials.css";
 
-const Reviews = () => {
+const Reviews = (props) => {
     const [readMore, setReadMore] = useState(false);
     const [name, setName] = useState("");
 
@@ -12,7 +12,7 @@ const Reviews = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 text-white text-center">
-                            <h1 className=" font-weight-light section-title"> What Others Say About Me</h1>
+                            <h1 className=" font-weight-light section-title"> {props.title}</h1>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const Reviews = () => {
                                 </div>
                                 <div className="testimonial-meta">
                                     <strong className="testimonial-name" itemProp="name">{testimonial.name}</strong>
-                                    <span className="testimonial-job-title" itemProp="jobTitle">{testimonial.role}</span>
+                                    <span className="testimonial-job-title" itemProp="jobTitle">{testimonial.role}<a href={testimonial.url} target="_blank" rel="noreferrer">{testimonial.company}</a></span>
                                 </div>
                             </div>
                         </div>
