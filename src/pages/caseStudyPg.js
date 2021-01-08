@@ -9,6 +9,9 @@ const CaseStudyPage = () => {
     let industry=""
     let size= ""
     let url= ""
+    let code= ""
+    let github= ""
+    let notes=""
     let requirements=""
     let technologies=""
     let overview=""
@@ -25,6 +28,9 @@ const CaseStudyPage = () => {
         industry= display.industry,
         size= display.size,
         url= display.url,
+        code= display.code,
+        github= display.github,
+        notes=display.notes,
         overview=display.overview,
         technologies=display.technologies,
         requirements=display.requirements,
@@ -58,6 +64,9 @@ const CaseStudyPage = () => {
             industry= {industry}
             size= {size}
             url= {url}
+            code={code}
+            github={github}
+            notes={notes}
             technologies={techDisplay}
             requirements={requirementsDisplay}
             overview={overview}

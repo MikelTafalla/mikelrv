@@ -18,8 +18,10 @@ const CaseStudy = (props) => {
                 <h3 className="card-header">{props.summary_header}</h3>
                 <div className="card-body">
                 <div><MDBIcon icon="industry" className="icon" />{props.industry}</div>
-                <div><MDBIcon icon="users" className="icon" />1{props.size}</div>
+                <div><MDBIcon icon="users" className="icon" />{props.size}</div>
                 <div><MDBIcon icon="link" className="icon" /><a href={props.url} target="_blank" rel="noopener noreferrer">{props.summary_header}</a></div>
+                <div><MDBIcon icon="link" className="icon" /><a href={props.github} target="_blank" rel="noopener noreferrer">{props.code}</a></div>
+                <div>{props.notes}</div>
                     <h5 className="card-title requirements">Project Requirements</h5>
                         {props.requirements}
                     <h5 className="card-title">Technologies Used</h5>
