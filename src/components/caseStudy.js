@@ -4,9 +4,10 @@ import "./caseStudy.css";
 
 
 const CaseStudy = (props) => {
+   
     return (
         <React.Fragment>
-        
+            <section className="section">
             <div className="container-fluid bg-light text-center title">
 
                 <h2>Case Study:{props.title}</h2>
@@ -58,7 +59,10 @@ const CaseStudy = (props) => {
                     </blockquote>
                     <div className="source-holder">
                         <div className="profile">
-                            <img src={require(`../assets/images/testimonial/${props.photo}`).default} alt="Nancy_Pena" />
+                            {props.timer ? 
+                            <img src={require(`../assets/images/testimonial/${props.photo}`).default} alt="Nancy_Pena" /> 
+                            : null}
+                            
                         </div>
                         <div className="meta">
                             <div className="name">{props.testimonial_name}</div>
@@ -67,7 +71,8 @@ const CaseStudy = (props) => {
                     </div>
                 </div>
             </div>
-            
+
+            </section>
         </React.Fragment>
     )
 }

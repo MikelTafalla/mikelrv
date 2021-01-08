@@ -4,6 +4,7 @@ import "./portfolio.css";
 import Projects from "./projects.json";
 import Practice from  "./practice.json";
 import Testimonials from "./testimonials";
+import { Link } from "react-router-dom";
 
 
 const Portfolio = () => {
@@ -28,9 +29,9 @@ const Portfolio = () => {
                         <img className="img-fluid img-thumbnail zoom" src={require(`../assets/projects/${project.path}`).default} alt={project.name} onMouseEnter={() => {setShown(true); setName(project.name)}}
                         />
                     }
-                    <button className="btn btn-light btn-lg btn-block">
+                    <Link to="/case_study"><button className="btn btn-light btn-lg btn-block" value={project.name} onClick={(event)=> localStorage.setItem("caseStudy", JSON.stringify(event.target.value))} >
                     <p>Client: {project.name}</p>
-                    View Case Study</button>
+                    View Case Study</button></Link>
 
                 </div>
             ))}
@@ -48,9 +49,9 @@ const Portfolio = () => {
                         <img className="img-fluid img-thumbnail zoom" src={require(`../assets/projects/${display.path}`).default} alt={display.name} onMouseEnter={() => {setShown(true); setName(display.name)}}
                         />
                     }
-                    <button className="btn btn-light btn-lg btn-block">
+                    <Link to="/case_study"><button className="btn btn-light btn-lg btn-block" value={display.name} onClick={(event)=> localStorage.setItem("caseStudy", JSON.stringify(event.target.value))}>
                     <p>Client: {display.name}</p>
-                    View Case Study</button>
+                    View Case Study</button></Link>
 
                 </div>
             ))}
@@ -68,9 +69,10 @@ const Portfolio = () => {
                         <img className="img-fluid img-thumbnail zoom" src={require(`../assets/projects/${display.path}`).default} alt={display.name} onMouseEnter={() => {setShown(true); setName(display.name)}}
                         />
                     }
-                    <button className="btn btn-light btn-lg btn-block">
+                    <Link to="/case_study">
+                    <button className="btn btn-light btn-lg btn-block" value={display.name} onClick={(event)=> localStorage.setItem("caseStudy", JSON.stringify(event.target.value))}>
                     <p>Client: {display.name}</p>
-                    View Case Study</button>
+                    View Case Study</button></Link>
 
                 </div>
             ))}
@@ -88,9 +90,10 @@ const Portfolio = () => {
                         <img className="img-fluid img-thumbnail zoom" src={require(`../assets/projects/${display.path}`).default} alt={display.name} onMouseEnter={() => {setShown(true); setName(display.name)}}
                         />
                     }
-                    <button className="btn btn-light btn-lg btn-block">
+                    <Link to="/case_study">
+                    <button className="btn btn-light btn-lg btn-block" value={display.name} onClick={(event)=> localStorage.setItem("caseStudy", JSON.stringify(event.target.value))}>
                     <p>Client: {display.name}</p>
-                    View Case Study</button>
+                    View Case Study</button></Link>
 
                 </div>
             ))}
@@ -108,7 +111,8 @@ const Portfolio = () => {
                         <img className="img-fluid img-thumbnail zoom" src={require(`../assets/practice/${project.path}`).default} alt={project.name} onMouseEnter={() => {setShown(true); setName(project.name)}}
                         />
                     }
-                    <button className="btn btn-light btn-lg btn-block">
+                    
+                    <button className="btn btn-light btn-lg btn-block" >
                     <p>Project: {project.name}</p>    
                     View Code</button>
 

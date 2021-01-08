@@ -7,12 +7,13 @@ import PortfolioPG from "./pages/portfolioPg";
 import CaseStudyPG from "./pages/caseStudyPg";
 
 function App() {
+  
   return (
     <Router>
     <div>
         <Route exact path="/" component={LandingPG} />
         <Route exact path="/home" component={LandingPG} />
-        <Route exact path="/portfolio" component={PortfolioPG} />
+        <Route exact path="/portfolio" component={PortfolioPG}/>
         <Route exact path="/about" component={AboutPG} />
         <Route exact path="/case_study" component={CaseStudyPG} />
         {/* <Route exact path="/contact" component={Contact} />  */}

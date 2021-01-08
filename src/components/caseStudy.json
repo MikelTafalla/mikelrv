@@ -1,5 +1,6 @@
 [
     {
+        "name":"Cleansafe Maintenance",
         "title": "Cleansafe Website",
         "subtitle": "Client needed to revamp 15 year old website. The company wanted to have a user interactive website to attrack more clients and add new services offered.",
         "summary_header": "CleanSafe Maintenance",
@@ -17,5 +18,45 @@
         "testimonial_name": "Nancy Pena",
         "testimonial_role": "CEO, CleanSafe Maintenance",
         "img": "nancy.png"
+    },
+    {
+        "name":"Hospice MD",
+        "title": "UB04 Form suite",
+        "subtitle": "Hospital located in Los Angeles needed to create a web-base database-interactive UB04 form to ensure proper billing and avoid human error on billing.",
+        "summary_header": "Hospice MD",
+        "industry": "HealthCare",
+        "size": "Unknown",
+        "url": "https://hospicemd-ub04.herokuapp.com/",
+        "code": "See Code",
+        "github": "https://github.com/MikelTafalla/UB04-Medicare-Billing",
+        "notes":"Note: Live hosted on heroku to showcase. Due to heroku policies, if app has been unused for 30 min, it's put to sleep. It may take a few seconds to load.",
+        "requirements": ["Polished GUI that resembles paper-copy UB04", "Ability to retrive and update information from the database pertaining to the specific patient"],
+        "technologies": ["Handlebars.js, CSS and SVG", "MySQL database with Sequelize ORM", "Node and Express server", "Javascript"],
+        "overview": "Client needed a suite to act as a middle tier on billing transactions. They required the capacity of clicking a patient name and automatically generate the UB04 form pertinent to that client. On the form, all the information stored in the database from the patient should be displayed. Client needed as well the possibility to update their database directly from the UB04 Form. Finally, the client was facing a big amount of billing returns from a financial department for the mismatch of patients-to-be-billed information. It was imperative to develop a UB04 that could interact with their database and serve as a middle tier to double-check the information and avoid human error prior to submission to the financial department. ",
+        "approach": "The first goal was to address the UI on an html file. Once that was finished and responsive, the html file was converted into a handlebars file, which by a simple {{each}} method allowed us to create multiple pages with the same structure and different information displayed. Thus, we got dryer code. From there, all of the effort was put on the development of the proper database models for this project nature and all of the backend logic.",
+        "testimonial":"As VP of Product and Application Development at HospiceMD, I was directly involved with Mikel and his team in developing a comprehensive Medical Billing Module for HospiceMD. I found him technically astute and extremely receptive to understanding key concepts and translating them into an actual deliverable. Mikel along with his team exhibited a great work ethic and professionalism. I strongly recommend Mikel as an excellent web developer.",
+        "testimonial_name": "Suleman Azariah",
+        "testimonial_role": "VP of Product and Application Development, HospiceMD",
+        "img": "suleman.png"
+    },
+    {
+        "name":"Veiramal Consultant",
+        "title": "VeiraMal -- Prototype For Employee Management Suite",
+        "subtitle": "HR Consulting firm located in Australia required the development of a prototype management tool that would have access to the company employees and would allow to edit or create newHire forms, employeeChange forms and termination forms.",
+        "summary_header": "VeiraMal Hr Consulting",
+        "industry": "Human Resources",
+        "size": "Unknown",
+        "url": "https://pure-scrubland-53050.herokuapp.com/",
+        "code": "Due to client requirements code is not public",
+        "github": "https://github.com/MikelTafalla/",
+        "notes": "Note: Live hosted on heroku to showcase. Due to heroku policies, if app has been unused for 30 min, it's put to sleep. It may take a few seconds to load.",
+        "requirements": ["Polished and smooth navigation GUI", "Ability to retrive, create and update information from the database pertaining to the specific employee"],
+        "technologies": ["React.js, CSS, semantic-ui framework", "MongoDB database with mongoose", "Node and Express server", "Javascript", "Morgan", "LocalStorage", "Axios"],
+        "overview": "Client was facing lot of complaints from managers and requests to automatize their employee management forms. They wanted to have a system where managers, hr department and payroll department would have live access to any change in their employees status. In order to do that they required a suite that allows them to communicate among departments, give different permissions to each department and would autocomplete specific fields. I was hired to create a prototype that they could use later on to create their own suite",
+        "approach": "First I divided the project to have a plan for an MVP. I started dividing the main form on different react components. Once that was successfully achieve, I created the schema for the database and after that all routing was created and tested. From there, I moved on to populate the form, and after that was achieved for a hard coded id on the get request, I moved on using localstorage to dynamically pass the specific employee id onto the get request and do all the pertaining conditional rendering.",
+        "testimonial":"We're sorry we don't have a review for this project",
+        "testimonial_name": "Name: N/A",
+        "testimonial_role": "Position: N/A",
+        "img": "avatar.png"
     }
 ]

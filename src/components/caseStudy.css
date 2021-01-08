@@ -1,10 +1,11 @@
-body {
-    margin-top: 0;
+.section {
+    top: 0;
     font-family: monospace !important;
     font-size: 18px;
     line-height: 1.7;
     margin-bottom: 5%;
     text-align:justify;
+    position: absolute;
 }
 .card-body {
     padding-right: 5%;
