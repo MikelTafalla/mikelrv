@@ -18,7 +18,6 @@ function App() {
         <Route exact path="/about" component={AboutPG} />
         <Route exact path="/case_study" component={CaseStudyPG} />
         <Route exact path="/contact" component={ContactPG} /> 
-      {/* <Footer /> */}
     </div>
    
   </Router>
