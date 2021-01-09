@@ -5,6 +5,7 @@ import LandingPG from "./pages/landingPg";
 import AboutPG from "./pages/aboutPg";
 import PortfolioPG from "./pages/portfolioPg";
 import CaseStudyPG from "./pages/caseStudyPg";
+import ContactPG from "./pages/contactPg";
 
 function App() {
   
@@ -16,7 +17,7 @@ function App() {
         <Route exact path="/portfolio" component={PortfolioPG}/>
         <Route exact path="/about" component={AboutPG} />
         <Route exact path="/case_study" component={CaseStudyPG} />
-        {/* <Route exact path="/contact" component={Contact} />  */}
+        <Route exact path="/contact" component={ContactPG} /> 
       {/* <Footer /> */}
     </div>
    
