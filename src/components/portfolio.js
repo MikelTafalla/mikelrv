@@ -5,6 +5,7 @@ import Projects from "./projects.json";
 import Practice from  "./practice.json";
 import Testimonials from "./testimonials";
 import { Link } from "react-router-dom";
+import LazyLoad from "react-lazyload";
 
 
 const Portfolio = () => {
@@ -150,8 +151,9 @@ const Portfolio = () => {
                             </button>
                         </div>
                     <div className="mt-2 mb-5">
-
+                        <LazyLoad>
                         {gallery}
+                        </LazyLoad>
 
                     </div> 
                     
