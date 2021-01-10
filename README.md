@@ -24,9 +24,9 @@ Personal Full-Stack Developer Portfolio made with React.
 * [Author](#author)
 
 ## Acknowledgment
-[jstejada](https://github.com/jstejada/react-typist), who inspired the use of Typist.
-[PascalSenn](https://codesandbox.io/s/mz790jmkjy?file=/src/index.js), who gave me the idea of mounting and breaking the image on my landing page
-logo from https://www.freelogodesign.org/
+* [jstejada](https://github.com/jstejada/react-typist), who inspired the use of Typist.
+* [PascalSenn](https://codesandbox.io/s/mz790jmkjy?file=/src/index.js), who gave me the idea of mounting and breaking the image on my landing page
+* Logo from https://www.freelogodesign.org/
 
 ## Author 
 
