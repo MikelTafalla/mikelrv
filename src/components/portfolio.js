@@ -130,7 +130,7 @@ const Portfolio = () => {
                 <div className="container text-center">
 
                     <h1 className="font-weight-light text-center text-lg-left mt-4 mb-0">My Work</h1>
-                    <h6>**Hover over the images to showcase giphy or click if on a phone</h6>
+                    <h6>**Hover over the images to showcase giphy</h6>
                         {/* sets filters */}
                         <div className="btn-group btn-group-toggle flex-wrap" data-toggle="buttons" >
                             <button className="btn btn-primary active" onClick={handleClick} value="client" >
