@@ -36,6 +36,21 @@ const AboutEd = () => {
                                         <tbody>
                                             <tr className="table-rows">
                                                 <td>
+                                                    Extensive <br></br>
+                                                        <a href="https://www.cartrover.com/" target="_blank" rel="noreferrer noopener">
+                                                            (CartRover product)<MDBIcon className="externalLink" icon="external-link-alt" size="1%"/>
+                                                        </a>
+                                                </td>
+                                                <td>
+                                                    <ul className="bullet_rows_ed_tech">
+                                                        <li>Software Engineer <span className="date_row_tech_ed">(05/2022 - Present)</span></li>
+                                                        <li>Software Developer Level 1 <span className="date_row_tech_ed">(05/2021 - 05/2022)</span></li>
+                                                    </ul>
+                                                </td>
+                                                <td>05/2021 - Present</td>
+                                            </tr>
+                                            <tr className="table-rows">
+                                                <td>
                                                     Freelance:
                                                     <ul>
                                                         <li>CleanSafe Maintenance</li>

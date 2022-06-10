@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3, faJsSquare, faNodeJs, faReact, faNpm, faBootstrap, faKorvue } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faJsSquare, faNodeJs, faReact, faNpm, faBootstrap, faKorvue, faPhp} from '@fortawesome/free-brands-svg-icons';
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 
 const AboutTech = () => {
@@ -67,6 +67,14 @@ const AboutTech = () => {
 
                                 <div className="item col-6 col-lg-3 with-margin">
                                     <div className="item-inner">
+                                        <div className="item-icon"><FontAwesomeIcon icon={faPhp} style={{ color: "darkblue", fontSize: 30 + "px" }} /></div>
+                                        <h5 className="item-title">PHP</h5>
+                                    </div>
+                                    {/*//item-inner*/}
+                                </div>
+
+                                <div className="item col-6 col-lg-3 with-margin">
+                                    <div className="item-inner">
                                         <div className="item-icon"><FontAwesomeIcon icon={faNpm} style={{ color: "red", fontSize: 38 + "px" }} /></div>
                                         <h5 className="item-title">npm</h5>
 
@@ -126,15 +134,15 @@ const AboutTech = () => {
                                 </div>
                                 {/*//item*/}
 
-                                <div className="item col-6 col-lg-3 with-margin">
+                               {/* <div className="item col-6 col-lg-3 with-margin">
                                     <div className="item-inner">
                                         <div className="item-icon"><img className="mr-5" src={require("../assets/icons/python.ico").default} alt="python" /></div>
                                         <h5 className="item-title">Python</h5>
                                         <div className="item-desc">Currently self-learning</div>
 
-                                    </div>
+                                    </div> */}
                                     {/*//item-inner*/}
-                                </div>
+                                {/* </div>  */}
                             </div>
                             {/*//row*/}
 
